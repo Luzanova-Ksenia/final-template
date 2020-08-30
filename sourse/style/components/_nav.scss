@@ -1,0 +1,175 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    min-height: 100vh;
+}
+
+.logo__img {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: url(../img/nav/nav-logo.png) center center no-repeat;
+    box-shadow: 10px -2px 20px -10px #000000;
+}
+
+.logo__img:hover {
+    transform: scale(1.1);
+}
+
+.nav__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: $gradient-color;
+}
+
+.nav__menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    @include nav-text;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    transform: scale(1.2);
+}
+
+.nav__link--home {
+    background: url(../img/nav/nav-home.png) center center no-repeat;
+}
+
+/* Triangles*/
+
+.nav__triangle--home {
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    display: none;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #FC745B;
+}
+
+.nav__content--home:hover {
+    .nav__triangle--home {
+        display: block;
+    }
+}
+
+.nav__triangle--stactics {
+    position: absolute;
+    top: 99px;
+    left: 70px;
+    display: none;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #FC745B;
+}
+
+.nav__content--stactics:hover {
+    .nav__triangle--stactics {
+        display: block;
+    }
+}
+
+.nav__triangle--users {
+    position: absolute;
+    top: 171px;
+    left: 70px;
+    display: none;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #FC745B;
+}
+
+.nav__content--users:hover {
+    .nav__triangle--users {
+        display: block;
+    }
+}
+
+.nav__triangle--settings {
+    position: absolute;
+    top: 241px;
+    left: 70px;
+    display: none;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #FC745B;
+}
+
+.nav__content--settings:hover {
+    .nav__triangle--settings {
+        display: block;
+    }
+}
+
+.nav__triangle--quires {
+    position: absolute;
+    top: 311px;
+    left: 70px;
+    display: none;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #FC745B;
+}
+
+.nav__content--quires:hover {
+    .nav__triangle--quires {
+        display: block;
+    }
+}
+
+.nav__link--stactics {
+    background: url(../img/nav/nav-stactics.png) center center no-repeat;
+}
+
+.nav__link--users {
+    background: url(../img/nav/nav-user.png) center center no-repeat;
+}
+
+.nav__link--settings {
+    background: url(../img/nav/nav-settings.png) center center no-repeat;
+}
+
+.nav__link--quires {
+    background: url(../img/nav/nav-quires.png) center center no-repeat;
+}
+
+/* Button off */
+
+.nav__off {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.nav__off--btn {
+    width: 20px;
+    height: 20px;
+    background: url(../img/nav/nav-power.png) center center no-repeat;   
+}
+
+.nav__off--btn:hover {
+    transform: scale(1.3);
+}
