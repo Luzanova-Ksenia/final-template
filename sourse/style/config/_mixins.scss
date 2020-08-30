@@ -1,0 +1,39 @@
+/* Style for navigation panel */
+@mixin nav-text {
+    font-family: $primary-font-family;
+    font-weight: 400;
+    font-size: $primary-font-size;
+    color: $secondary-color;
+}
+
+/* Style for title and header */
+@mixin title-text {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: $primary-font-size;
+    color: $primary-color-text;
+}
+
+/* Style for arrows */
+@mixin levels-text {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: $primary-font-size;
+    color: #BFBFBF;
+}
+
+/* Style for main content */
+@mixin main-text {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: calc(16px + 0.1vw);
+    color: $primary-color-text;
+}
+
+/* */
+@mixin big-text {
+    font-family: $primary-font-family;
+    font-weight: 900;
+    font-size: $primary-font-size;
+    color: $primary-color-text;
+}
